@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saxocenter | Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        div {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            position: relative; 
+        }
+        div img {
+            width: 400px;
+            height: 300px;
+            border: 2px solid brown;
+            border-radius: 13px;
+            box-shadow: 4px 7px 0px brown;
+            cursor: pointer;
+            margin: 10px;
+            transition: 400ms;
+        }
+        div img:hover {
+            filter: grayscale(1);
+            transform: scale(1.03);
+        }
+        .back-arrow {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            z-index: 999; 
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <img src="image/bg1.jpg" alt="">
+        <img src="image/bg2.jpg" alt="">
+        <img src="image/bg3.jpg" alt="">
+        <img src="image/bg4.jpg" alt="">
+        <img src="image/bg5.jpg" alt="">
+        <img src="image/bg6.jpg" alt="">
+        
+        <!-- Back arrow to return home -->
+        <a href="index.html" class="back-arrow"><i class="fa fa-arrow-left"></i></a>
+    </div>
+</body>
+</html>

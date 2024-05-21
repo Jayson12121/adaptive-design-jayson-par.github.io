@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saxocenter | Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: black;
+        }
+        .contact-container {
+            width: 80%;
+            max-width: 600px; 
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        .contact-container h2 {
+            margin-top: 0;
+        }
+        .contact-container form {
+            margin-top: 20px;
+        }
+        .back-arrow {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: whitesmoke;
+            text-decoration: none;
+            font-size: 24px;
+            z-index: 999; 
+        }
+        
+    </style>
+</head>
+<body>
+
+<div class="contact-container">
+    <h2>Contact Us</h2>
+    <p>Thank you for your interest in contacting us. Please fill out the form below and we will get back to you as soon as possible.</p>
+    <form action="submit_contact_form.php" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+    <a href="index.html" class="back-arrow"><i class="fa fa-arrow-left"></i></a>
+</div>
+
+</body>
+</html>
